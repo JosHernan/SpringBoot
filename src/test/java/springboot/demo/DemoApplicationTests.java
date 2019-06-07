@@ -24,7 +24,7 @@ public class DemoApplicationTests {
 
         Usuario us=new Usuario();
         us.setId(2);
-        us.setNombre("afirme1");
+        us.setNombre("spring");
         us.setClave(encoder.encode("145"));//creamos el encoder para eencriptar los datos de password
        Usuario retorno= repo.save(us);
        assertTrue(retorno.getClave().equalsIgnoreCase(us.getClave()));//prueba test
